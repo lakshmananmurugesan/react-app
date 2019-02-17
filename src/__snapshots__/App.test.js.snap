@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleTitleTest renders correctly 1`] = `
+<div
+  data-radium={true}
+>
+  <div
+    className="App"
+    data-radium={true}
+  >
+    <h1>
+      React app
+    </h1>
+    <h2>
+      Person list
+    </h2>
+    <ul
+      className="person-list"
+    />
+    <br />
+    <div>
+      <form
+        onSubmit={[Function]}
+      >
+        <label>
+          Person Name:
+          <input
+            name="name"
+            onChange={[Function]}
+            type="text"
+          />
+        </label>
+        <button
+          type="submit"
+        >
+          Add
+        </button>
+      </form>
+    </div>
+    <br />
+    <div>
+      <form
+        onSubmit={[Function]}
+      >
+        <label>
+          Person ID:
+          <input
+            name="id"
+            onChange={[Function]}
+            type="text"
+          />
+        </label>
+        <button
+          type="submit"
+        >
+          Delete
+        </button>
+      </form>
+    </div>
+    <p
+      className="red"
+    >
+      Some text
+    </p>
+    <button
+      data-radium={true}
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "backgroundColor": "green",
+          "border": "1px solid blue",
+          "color": "white",
+          "cursor": "pointer",
+          "font": "inherit",
+          "padding": "8px",
+        }
+      }
+    >
+      Toggle content
+    </button>
+    <button
+      className="btn"
+      onClick={[Function]}
+    >
+      Switch
+    </button>
+  </div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`SimplePerson renders correctly 1`] = `
+<div>
+  <p />
+  <p />
+</div>
+`;
