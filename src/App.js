@@ -7,6 +7,8 @@ import PersonList from './Person/PersonList.js';
 import PersonListForm from './Person/PersonListForm.js';
 import PersonListDelete from './Person/PersonListDelete.js';
 import SimplePerson from './Person/SimplePerson.js';
+import LifeCycleHooks from './Person/LifeCycleHooks';
+import RouterLinks from './Person/RouterLinks';
 
 class App extends Component {
   state = {
@@ -68,6 +70,10 @@ class App extends Component {
     this.setState({persons: persons})
   }
 
+  _handleDestroy() {
+    console.log('unmount');
+  }
+
   render() {
     const style = {
       backgroundColor: 'green',
@@ -108,7 +114,12 @@ class App extends Component {
       <StyleRoot>
         <div className='App'>
           <h1>React app</h1>
-          <h2>Person list</h2>
+          <RouterLinks />
+          <LifeCycleHooks />
+          <div ref="wassup">
+            <a href="#" onClick={this._handleDestroy.bind(this)}>Dest</a>
+          </div>
+          <h2>Person list here</h2>
           <PersonList /><br/>
           <PersonListForm /><br/>
           <PersonListDelete />
